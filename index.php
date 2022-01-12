@@ -12,10 +12,10 @@
     <h1>Crud</h1>
     
     <div class=" container-fluid">
-        <div class=" row ">
+        <div class="">
             <div class="col">
                 <h3>Cadastro</h3>
-                <form class=" form form-control-sm" action="cadastro.php" method="POST">
+                <form class="" action="cadastro.php" method="POST">
                     <div class=" form-control">
                         <div class=" form-group" >
                             <label for="nome">Nome</label>
