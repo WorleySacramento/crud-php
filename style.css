@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgba(111, 91, 129, 0.178);
+}
+
+label{
+    font-weight: bold;
+    color: black solid bold;
+}
+
+form{
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+}
+
+.divForm{
+    align-items: center;
+}

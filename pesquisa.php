@@ -89,7 +89,7 @@ $dados = mysqli_query($conn, $sql);
                     </tbody>
                 </table>
 
-                <a href="index.php" class="btn btn-info">Pagina inicial</a>
+                <a href="pesquisa.php" class="btn btn-info">Voltar</a>
             </div>
 
         </div>
