@@ -31,7 +31,7 @@ $dados = mysqli_query($conn, $sql);
                 <nav class="navbar navbar-light bg-light">
                     <div class="container-fluid">
                         <form class="d-flex" action="pesquisa.php" method="POST">
-                            <input class="form-control me-2" type="search" name="busca" placeholder="Pesquisar" aria-label="Search">
+                            <input class="form-control me-2" type="search" name="busca" autofocus placeholder="Pesquisar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                         </form>
                     </div>
@@ -43,6 +43,7 @@ $dados = mysqli_query($conn, $sql);
                             <th scope="col">Nome</th>
                             <th scope="col">E-Mail</th>
                             <th scope="col">Idade</th>
+                            <th scope="colspan">Funções</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,23 +51,31 @@ $dados = mysqli_query($conn, $sql);
                         <?php
 
                         while ($ld = mysqli_fetch_assoc($dados,)) {
-                           $id = $ld['id'];
-                           $nome = $ld['nome'];
-                           $email = $ld['email'];
-                           $idade = $ld['idade'];
+                            $idPessoa = $ld['idPessoa'];
+                            $nome = $ld['nome'];
+                            $email = $ld['email'];
+                            $idade = $ld['idade'];
 
-                           echo " <tr>
+                            echo " <tr>
                                 <td>$nome</td>
                                 <td>$email</td>
                                 <td>$idade</td>
+                                <td><a href='edit_cadastro.php?id=$idPessoa' class='btn btn-warning btn-sm' type='button'>Editar</a></td>
+                                <td>
+                                <a  data-bs-target='#confirma' data-bs-toggle='modal' class='btn btn-danger btn-sm' type='button' onclick=" .' " '." get_data($idPessoa, '$nome')" .'"' . ">
+                                Excluir
+                                </a>
+                                </td>
                                 </tr>";
-
                         }
 
                         ?>
 
+                        <!-- onclick="get_data($id, '$nome')"
+                            concatenada  onclick=" .' " '." get_data($id, '$nome')" .'"' . " -->
 
-                       
+
+
 
                         <tr>
 
@@ -85,6 +94,42 @@ $dados = mysqli_query($conn, $sql);
 
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">EXCLUIR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="excluir_script.php" method="post">
+                        <p>
+                        <h3>Tem Certeza Que quer EXCLUIR?</h3>
+                        <b id="nome_pessoa">Nome</b>
+                        </p>
+                        
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                            <input type="hidden" name="nome" id="nome_pessoa2" value="">
+                            <input type="hidden" name="id" id="cod_pessoa" value="">
+                            <input type="submit" class="btn btn-danger" value="Sim">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function get_data(id,nome){
+            document.getElementById('nome_pessoa').innerHTML = nome;
+            document.getElementById('nome_pessoa2').innerHTML = nome;
+            document.getElementById('cod_pessoa').value = id;
+        }
+    </script>
 
 
 
