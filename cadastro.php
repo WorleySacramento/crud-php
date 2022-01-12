@@ -15,14 +15,13 @@
     <div class=" container-fluid">
         <div class=" row ">
             <?php
-            include "./conect.php";
+            include "conect.php";
 
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $idade = $_POST['idade'];
 
-            $sql = "INSERT INTO 'clientes'( 'nome', 'email', 'idade')
-                    VALUES ('$nome','$email','$idade',)";
+            $sql = "INSERT INTO `clientes`(`nome`, `email`, `idade`) VALUES ('$nome','$email','$idade')";
 
 
             if (mysqli_query($conn, $sql)) {

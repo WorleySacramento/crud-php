@@ -15,7 +15,7 @@
         <div class=" row ">
             <div class="col">
                 <h3>Cadastro</h3>
-                <form class=" form form-control-sm" action="./cadastro.php" method="post">
+                <form class=" form form-control-sm" action="cadastro.php" method="POST">
                     <div class=" form-control">
                         <div class=" form-group" >
                             <label for="nome">Nome</label>
@@ -27,7 +27,7 @@
                         </div>
                         <div class=" form-group">
                             <label for="idade">idade</label>
-                            <input type="number" name="idade" id="">
+                            <input type="text" name="idade" id="">
                         </div>
                         <div class=" form-group" >
                             <button type="submit">Confirmar</button>

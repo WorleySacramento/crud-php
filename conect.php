@@ -1,12 +1,12 @@
 <?php
+
 $server = "localhost";
 $user = "root";
-$password = "";
+$pswd = "";
 $bd = "form_db";
 
-if ($conn = mysqli_connect( $server, $user, $password, $bd)){
-    //echo "Conectado com sucesso!!";
-}else
-echo "ERRO!!";
-
+if ( $conn = mysqli_connect($server, $user, $pswd, $bd) ) {
+    // echo "Conectado!";
+} else
+    echo "Erro!";
 ?>
