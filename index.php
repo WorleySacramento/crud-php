@@ -11,23 +11,23 @@
 <body>
     <h1>Crud</h1>
     
-    <div class=" container-fuid">
+    <div class=" container-fluid">
         <div class=" row ">
             <div class="col">
                 <h3>Cadastro</h3>
-                <form class=" form form-control-sm" action="cadastro.php" method="post">
+                <form class=" form form-control-sm" action="./cadastro.php" method="post">
                     <div class=" form-control">
                         <div class=" form-group" >
                             <label for="nome">Nome</label>
-                            <input type="text" name="" id="">
+                            <input type="text" name="nome" id="">
                         </div>
                         <div class=" form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" name="" id="">
+                            <input type="email" name="email" id="">
                         </div>
                         <div class=" form-group">
-                            <label for="">idade</label>
-                            <input type="number" name="" id="">
+                            <label for="idade">idade</label>
+                            <input type="number" name="idade" id="">
                         </div>
                         <div class=" form-group" >
                             <button type="submit">Confirmar</button>
