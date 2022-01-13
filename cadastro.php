@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="StiloTeste.css">
     <title>CRUD EM PHP</title>
 </head>
 <body>
-    <div class=" d-flex align-items-center">
-        <h1>Cadastros</h1>
-    </div>
     
+   
     
-    <div class=" container-fluid">
-        <div class="row">
+    <div class=" container">
+        <div class="container-fluid">
+            <div class="justify-content-center d-flex">
+                <h2 class="title animate__animated animate__backInUp">Cadastros</h2>
+            </div>
             <div class="col-12 d-flex justify-content-center">
-            
-                <form class="d-flex form-control-sm form" action="script_cadastro.php" method="POST">
+                
+                <form class="d-flex form-control-md form" action="script_cadastro.php" method="POST">
                     <div class=" divForm form-inline form-control">
                         <div class="" >
                             <label class=" form-label" for="nome">Nome</label>

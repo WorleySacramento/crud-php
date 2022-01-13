@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>CRUD EM PHP</title>
 </head>
 
@@ -25,7 +26,7 @@ $dados = mysqli_query($conn, $sql);
     <h1>Crud</h1>
 
     <div class=" container-fluid">
-        <div class="">
+        <div class=" container">
             <div class="col">
                 <h3>Pesquisa</h3>
                 <nav class="navbar navbar-light bg-light">
@@ -37,13 +38,13 @@ $dados = mysqli_query($conn, $sql);
                     </div>
                 </nav>
 
-                <table class="table table-hover">
+                <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
                             <th scope="col">E-Mail</th>
                             <th scope="col">Idade</th>
-                            <th scope="colspan">Funções</th>
+                            <th scope="col">Funções</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -60,8 +61,8 @@ $dados = mysqli_query($conn, $sql);
                                 <td>$nome</td>
                                 <td>$email</td>
                                 <td>$idade</td>
-                                <td><a href='edit_cadastro.php?id=$idPessoa' class='btn btn-warning btn-sm' type='button'>Editar</a></td>
-                                <td>
+                                <td><a href='edit_cadastro.php?id=$idPessoa' class='btn btn-warning btn-sm' type='button'>Editar</a>
+                                
                                 <a  data-bs-target='#confirma' data-bs-toggle='modal' class='btn btn-danger btn-sm' type='button' onclick=" .' " '." get_data($idPessoa, '$nome')" .'"' . ">
                                 Excluir
                                 </a>
@@ -89,6 +90,7 @@ $dados = mysqli_query($conn, $sql);
                     </tbody>
                 </table>
 
+                <a href="index.php" class="btn btn-info">Página Inicial</a>
                 <a href="pesquisa.php" class="btn btn-info">Voltar</a>
             </div>
 
