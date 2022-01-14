@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../assets/css/StiloTeste.css">
     
@@ -18,8 +18,7 @@
 <body>
 
     <div class="container  ">
-
-        
+       
         <div class="container-fluid ">
 
             <div class="justify-content-center d-flex">
@@ -50,6 +49,11 @@
                     </div>
                     <br><br>
 
+                    <div>
+                    <button type="button" id="popover" class="btn btn-sm btn-danger" data-bs-toggle="popover" title="Popover title" 
+                data-bs-content="Telefone:31-99999-9999 Email:crud@email.com">Contato</button>
+                    </div>
+
                     <div class=" justify-content-center d-flex">
                         <a href="#" class="password">Esqueceu sua Senha?</a>
                     
@@ -62,7 +66,13 @@
     </div>
 
     
-
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+     
+    </script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
