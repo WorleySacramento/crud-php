@@ -17,7 +17,7 @@
 
 
     <div class=" container-fluid">
-        <div class=" row ">
+        <div class=" ">
             <?php
             include "conect.php";
 
@@ -34,9 +34,13 @@
                 mensagem ("$nome Não Cadastrado!", 'danger');
             ?>
 
-            <a href="index.php" class="btn btn-sm btn-primary">Voltar</a> 
+            
             
 
+        </div>
+            <hr>
+        <div class="float-start" style="max-width: 50px;">
+        <a href="index.php" type=" button" class="btn btn-sm btn-primary">Voltar</a> 
         </div>
     </div>
 

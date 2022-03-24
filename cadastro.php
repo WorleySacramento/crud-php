@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="stylesheet" href="StiloTeste.css">
     <title>CRUD EM PHP</title>
 </head>
 <body>
-    
+
    
     
     <div class=" container">
         <div class="container-fluid">
-            <div class="justify-content-center d-flex">
-                <h2 class="title animate__animated animate__backInUp">Cadastros</h2>
+        <?php require_once "header.php"; ?>
+            <div class="titlePages">
+                <h2 class=" ">Cadastros</h2>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 
@@ -32,7 +33,7 @@
                         </div>
                         <div class=" ">
                             <label class=" form-label" for="idade">Idade</label>
-                            <input type="text" name="idade" id="" required>
+                            <input type="number" name="idade" id="" required>
                         </div>
                         <div class=" " >
                             <button class=" btn btn-primary" type="submit">Confirmar</button>
@@ -43,10 +44,16 @@
             </div>
             
         </div>
-
-        <a href="index.php" class="btn btn-info">Pagina inicial</a>
+       
     </div>
 
+
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -17,75 +17,44 @@
   <div class=" container">
 
     <div class="container-fluid">
-      <div class="row">
-        <div class=" d-flex ">
-          <h1 class="title animate__animated animate__backInUp">Seja Bem Vindo(a)!!!</h1>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
+    <?php require_once "header.php"; ?>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cadastro.php">Cadastros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pesquisa.php">Pesquisa</a>
-                </li>
-                <li class="nav-item">
-                  <div class=" d-flex justify-content-end">
-                    <button type="button" class="justify-content-end d-flex btn btn-sm btn-danger" data-bs-toggle="popover" title="Entre em Contato!" data-bs-content="Telefone:31-99999-9999 Email:crud@email.com">Contato</button>
-                  </div>
-
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-
+            <!-- Imagens Carrousel-->
       <div class="row d-flex d-grid ">
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="10000">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="10000">
                   <img src="./img/B img.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="10000">
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingA" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalA" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/img 1.jpg" class="d-block w-100" alt="...">
@@ -97,24 +66,24 @@
                   <img src="./img/img 3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingA" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalA" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingA" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalA" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingB" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalB" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/D img.jpg" class="d-block w-100" alt="...">
@@ -126,24 +95,24 @@
                   <img src="./img/img 3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingB" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalB" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingB" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalB" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingC" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalC" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -155,24 +124,24 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingC" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalC" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingC" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalC" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingD" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalD" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -184,24 +153,24 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingD" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalD" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingD" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalD" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+           
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingE" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalE" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -213,24 +182,24 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingE" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalE" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingE" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalE" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+           
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingF" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalF" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -242,24 +211,24 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingF" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalF" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingF" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalF" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingG" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalG" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -271,24 +240,24 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingG" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalG" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingG" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalG" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">
             <h4 class="card-title">Mussum Ipsum</h4>
-            <div id="carouselExampleControlsNoTouchingH" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleIntervalH" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/A img.jpg" class="d-block w-100" alt="...">
@@ -300,17 +269,17 @@
                   <img src="./img/C img.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingH" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalH" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingH" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalH" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="card-text">cacilds vidis litro abertis. Quem manda na minha terra sou euzis</p>
-            <a href="#" class="btn btn-primary">Perfil</a>
+            
           </div>
         </div>
 
@@ -326,12 +295,6 @@
   </div>
 
 
-  <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
-  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" sintegrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

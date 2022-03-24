@@ -26,12 +26,29 @@ body{
     border-radius: 15px;
 }
 
+.formEdit{
+    background-color: rgba(0, 76, 139, 0.37);
+    justify-content: center;
+    max-width:600px;
+    margin:40px auto;
+    box-shadow:rgb(47, 48, 54) 4px 4px 10px 4px ;
+    color: white;
+    border-radius: 15px;
+    margin-top: 200px;
+    display: center;
+}
+
 .title{
     font-weight: bolder;
     text-decoration: blueviolet;
     margin-top: 30px;
     box-shadow: inset;
 
+}
+
+.divForm{
+    align-items: center;
+    font-weight: bold;
 }
 
 .password{
@@ -43,4 +60,51 @@ body{
 button{
     font-weight: bold;
     color: yellow;
+}
+
+table{
+    background-color: azure;
+    
+    width: 500px;
+    scrollbar-color: black;
+    max-height: 500px;
+}
+
+
+
+#tab_dash1{
+    
+    max-height: 28rem;
+    overflow: scroll;
+}
+
+.head-fixed{
+    position: sticky;
+    top: 0;
+}
+
+tbody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 14px;
+}
+li :hover{
+    background-color:#ff9999;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+}
+a {
+    border-radius: 50px;
+    font-weight: bold;
+
+}
+
+
+.titlePages{
+    background-color: rgba(240, 248, 255, 0.253);
+    max-width: 100;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
