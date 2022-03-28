@@ -36,12 +36,11 @@ $dados = mysqli_query($conn, $sql);
                     <div class=" ">
                     <?php require_once "header.php"; ?>
                     </div>
-                        <div class="titlePages ">
-                        <h1 class="">Clientes</h1>
+                        <div class="titlePages">
+                        <h2 class="">Clientes</h2>
                         </div>
                      
-                    
-                        
+    
                      <div class="form-control-sm d-inline-flex ">
                         <form class="d-flex" action="pesquisa.php" method="POST">
                             <input class="form-control-sm " type="search" name="busca" autofocus placeholder="Pesquisar" aria-label="Search">

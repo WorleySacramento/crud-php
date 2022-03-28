@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="StiloTeste.css">
   <title>Crud Para Cadastro</title>
 </head>
@@ -20,7 +19,7 @@
     <?php require_once "header.php"; ?>
 
             <!-- Imagens Carrousel-->
-      <div class="row d-flex d-grid ">
+      <div class="row d-flex d-grid  navbar-nav-scroll vm-100 justify-content-evenly">
 
         <div class="card col-md-4 d-flex">
           <div class="card-body">

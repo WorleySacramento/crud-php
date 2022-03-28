@@ -102,9 +102,10 @@ a {
 
 
 .titlePages{
-    background-color: rgba(240, 248, 255, 0.253);
+    background-color: rgba(240, 248, 255, 0.767);
     max-width: 100;
-    font-weight: bolder;
+    font-weight: bold;
     display: flex;
     justify-content: center;
+    margin-top: 3px;
 }
