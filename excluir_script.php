@@ -33,8 +33,10 @@
             } else
                 mensagem ("$nome Não Excluído!", 'danger');
             ?>
-
-            <a href="index.php" class="btn btn-sm btn-primary">Voltar</a> 
+                <div class="btn-sm">
+                <a href="index.php" class="btn btn-sm btn-primary">Voltar</a> 
+                </div>
+            
             
 
         </div>
